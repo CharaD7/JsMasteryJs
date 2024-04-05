@@ -1,9 +1,18 @@
-const age = 19;
-const isCool = true;
+const superHero = 'Iron Man';
 
-// is cool and is above the age of 18
-if ( isCool && age > 18) {
-  console.log('You may enter.');
-} else {
-  console.log('Get outta here!');
+switch(superHero) {
+  case 'Thor':
+    console.log('That is my hammer!');
+    break;
+  case 'Captain America':
+    console.log('I can do this all day!');
+    break;
+  case 'Iron Man':
+    console.log('I am Iron Man...');
+    break;
+  case 'Black Widow':
+    console.log('One shot, one kill!');
+    break;
+  default:
+    console.log('I stand for justice!');
 }
