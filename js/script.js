@@ -16,3 +16,7 @@ switch(superHero) {
   default:
     console.log('I stand for justice!');
 }
+
+console.log(typeof NaN);
+console.log(typeof null);
+console.log(typeof undefined);
