@@ -3,11 +3,17 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>JS School</title>
-    <!-- <link href="css/style.css" rel="stylesheet"> -->
-    <script language="javascript" src="js/script.js"></script>
+    <title>DOM | Intro</title>
+
+    <script>
+      window.onload = function() {
+        const heading = document.createElement("h1");
+        const date = document.createTextNode(new Date().toString());
+        heading.appendChild(date);
+        document.body.appendChild(heading);
+      }
+    </script>
   </head>
   <body>
-  
   </body>
 </html>
