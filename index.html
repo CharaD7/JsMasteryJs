@@ -17,11 +17,16 @@
     </style>
 
     <script>
-      window.onload = function() {
-        const heading = document.createElement("h1");
-        const date = document.createTextNode(new Date().toString());
-        heading.appendChild(date);
-        document.body.appendChild(heading);
+      function menuClicked(currentElement){
+        const menuItems = document.getElementsByClassName("menu-item");
+
+        for (var i = 0; i < menuItems.length; i++) {
+          menuItems[i].classList.remove("active");
+        }
+
+        console.log(currentElement);
+        event.target.classList.add("active");
+        // currentElement.classList.add("active");
       }
     </script>
   </head>
