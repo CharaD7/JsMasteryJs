@@ -24,17 +24,16 @@
           menuItems[i].classList.remove("active");
         }
 
-        console.log(currentElement);
-        event.target.classList.add("active");
-        // currentElement.classList.add("active");
+        console.log(`Current element is: ${currentElement}`);
+        currentElement.classList.add("active");
       }
     </script>
   </head>
   <body>
     <ul>
-      <li class="menu-item">Menu 1</li>
-      <li class="menu-item">Menu 2</li>
-      <li class="menu-item">Meun 3</li>
+      <li class="menu-item" onclick="menuClicked(this)">Menu 1</li>
+      <li class="menu-item active" onclick="menuClicked(this)">Menu 2</li>
+      <li class="menu-item" onclick="menuClicked(this)">Menu 3</li>
     </ul>
   </body>
 </html>
