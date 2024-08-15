@@ -1,9 +1,13 @@
-const inventory = [
-  { price: 5, name: 'eggs' },
-  { price: 8, name: 'ham' },
-  { price: 2, name: 'mayo' },
-  { price: 12, name: 'bread' },
+const numbers = [-10, 0, -2, 15, -36, 25];
+const  positiveNumbers = numbers.filter(number => number >= 0);
+
+console.log(`Positive numbers in ${numbers} are ${positiveNumbers}`);
+
+var employeesData = [
+  { name: 'Sebastain', overtime: 5 },
+  { name: 'Cardi Vee', overtime: 10 },
+  { name: 'Goergoe Lopez', overtime: 12 },
 ];
 
-const prices = inventory.map(item => item.price);
-console.log(`All prices: ${prices}`);
+const employeesToReward = employeesData.filter(employees => employees.overtime >= 7);
+console.log(`Employees to reward are ${employeesToReward}`);
