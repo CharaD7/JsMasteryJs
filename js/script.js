@@ -1,13 +1,5 @@
-const numbers = [-10, 0, -2, 15, -36, 25];
-const  positiveNumbers = numbers.filter(number => number >= 0);
+const numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
 
-console.log(`Positive numbers in ${numbers} are ${positiveNumbers}`);
+const sum = numbers.reduce((acc, val) => acc + val, 0);
 
-var employeesData = [
-  { name: 'Sebastain', overtime: 5 },
-  { name: 'Cardi Vee', overtime: 10 },
-  { name: 'Goergoe Lopez', overtime: 12 },
-];
-
-const employeesToReward = employeesData.filter(employees => employees.overtime >= 7);
-console.log(`Employees to reward are ${employeesToReward}`);
+console.log(`The sum of ${numbers} is ${sum}.`);
