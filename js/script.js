@@ -1,8 +1,9 @@
-let sum = 0;
-const numbers = [65, 44, 12, 4];
+const inventory = [
+  { price: 5, name: 'eggs' },
+  { price: 8, name: 'ham' },
+  { price: 2, name: 'mayo' },
+  { price: 12, name: 'bread' },
+];
 
-numbers.forEach((number) => {
-  sum += number;
-});
-
-console.log(`Sum of ${numbers} is ${sum}`);
+const prices = inventory.map(item => item.price);
+console.log(`All prices: ${prices}`);
