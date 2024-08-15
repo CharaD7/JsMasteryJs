@@ -28,7 +28,12 @@ const fetchPhotoDetails = (photo) => {
   })
 };
 
-fetchUser('charad')
-  .then((user) => fetchUserPhotos(user))
-  .then((photos) => fetchPhotoDetails(photos[0]))
-  .then((detail) => console.log(detail));
+const displayData = async () => {
+  const user = await fetchUser('Chara');
+  const photos = await fetchUserPhotos(user);
+  const detail = await fetchPhotoDetails(photos[0]);
+
+  console.log(detail);
+};
+
+displayData();
