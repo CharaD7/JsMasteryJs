@@ -2,7 +2,7 @@ let sum = 0;
 const numbers = [65, 44, 12, 4];
 
 numbers.forEach((number) => {
-  sum += item;
+  sum += number;
 });
 
-console.log(sum);
+console.log(`Sum of ${numbers} is ${sum}`);
