@@ -1,5 +1,11 @@
-const numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+const fetchUser = (username, callback) => {
+  setTimeout(() => {
+    console.log('Now we have the user');
 
-const sum = numbers.reduce((acc, val) => acc + val, 0);
+    callback({ name: username });
+  }, 2000);
+};
 
-console.log(`The sum of ${numbers} is ${sum}.`);
+const user = fetchUser('chara', (user) => {
+  console.log(user);
+});
